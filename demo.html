@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yandex demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div class="banner">
+    </div>
+    <div class="progressbox">
+        <span class='progress' style="width:0%" id="blue"></span>
+    </div>   
+    <button onclick="changeProgress()">Change progress</button>
+    
+    <div class="progressbox">
+        <span class='progress mult-green' style="width:0%" id='green'></span>
+        <span class='progress mult-yellow' style="width:0%" id='yellow'></span>
+        <span class='progress mult-red' style="width:0%" id='red'></span>
+    </div>
+    <button onclick="fillGreen()">Load first part</button>
+    <button onclick="fillYellow()">Load second part</button>
+    <button onclick="fillRed()">Load third part</button>
+    <script src="main.js"></script>
+</body>
+</html>

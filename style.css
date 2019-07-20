@@ -1,0 +1,155 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+.banner{
+    height: 2px;
+    background-color: darkred;
+    animation-duration: 2s;
+    animation-name: loadbar;
+}
+
+@keyframes loadbar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.progressbox{
+    margin: 5px;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-shadow-radius: inset 1px 2px 3px #c9c7c7;
+    -moz-shadow-radius: inset 1px 1px 3px #c9c7c7;
+    box-shadow: inset 1px 2px 3px #c9c7c7;
+}
+
+/* .progressbox1{
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-shadow-radius: inset 1px 2px 3px #c9c7c7;
+    -moz-shadow-radius: inset 1px 1px 3px #c9c7c7;
+    box-shadow: inset 1px 2px 3px #c9c7c7;
+} */
+/*Beautiful idea, can implement*/
+
+
+
+.progress{
+    display: inline-block;
+    height: 100%;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #3377b3;
+    -webkit-shadow-radius: inset 1px 2px 3px #2f6a9e;
+    -moz-shadow-radius: inset 1px 1px 3px #2f6a9e;
+    box-shadow: inset 1px 2px 3px #2f6a9e;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.progress.mult-green{
+    background-color: rgba(0, 185, 0, 0.788);
+    float: left;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.progress.mult-yellow{
+    background-color: rgba(219, 197, 1, 0.788);
+    float: left;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.progress.mult-red{
+    background-color: rgba(206, 0, 0, 0.788);
+    float: left;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.progress.anim25{
+    animation-duration: 3s;
+    animation-name: fill25;
+}
+
+.progress.anim50{
+    animation-duration: 3s;
+    animation-name: fill50;
+}
+
+.progress.anim75{
+    animation-duration: 3s;
+    animation-name: fill75;
+}
+
+.progress.anim100{
+    animation-duration: 3s;
+    animation-name: fill100;
+}
+
+@keyframes fill25{
+    to{
+        width: 25%;
+    }
+}
+
+@keyframes fill50{
+    to{
+        width: 50%;
+    }
+}
+
+@keyframes fill75{
+
+    to{
+        width: 75%;
+    }
+}
+
+@keyframes fill100{
+    to{
+        width: 100%;
+    }
+}
+
+.progress.mult-green.anim{
+    animation-duration: 3s;
+    animation-name: fill50;
+}
+
+.progress.mult-yellow.anim{
+    animation-duration: 3s;
+    animation-name: fill25;
+}
+
+.progress.mult-green.anim{
+    animation-duration: 3s;
+    animation-name: fill25;
+}
